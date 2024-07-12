@@ -1,5 +1,11 @@
 # Smishing Traid targets India with large scale "India Post" themed iMessage phish texts
 
+<div data-full-width="true">
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>An AI generated Image that depicts a hacker working on computer along with eating Pizza.</p></figcaption></figure>
+
+</div>
+
 ## Background
 
 A lot of people who own an iPhone in India woke up to an "Indian Post" themed phishing iMessage from a spurious and suspicious email ID. A lot of people are talking about it an [analyst blogged](https://hacback17.substack.com/p/phishing-campaign-impersonating-india?r=75yg\&triedRedirect=true) about it to some extent. This blog is an attempt to uncover infrastructure and identify the scale of infrastructure in an attempt to identify the scale of the operation & to discuss the TTPs leveraged in detail.&#x20;
@@ -22,6 +28,8 @@ The threat actor seemed to be careful not to follow a specific pattern but here'
 * The link was seem mostly a typo squat domain of India post. [Click here to learn more about typo squats. ](https://en.wikipedia.org/wiki/Typosquatting)In a few cases, they've used a URL shortener.
 
 <figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption><p>The Initial landing page.</p></figcaption></figure>
+
+* Further, the page attempts to steal payment information along with information related to the user. This data was identified to be used
 
 ## Evasion tactics
 
@@ -54,12 +62,18 @@ The infra is mostly on the following ASNs:&#x20;
 * LightNode&#x20;
 * Multacom
 
-The targets currently indentified are: India Post, Singapore Post & Morgan Stanley (IoCs are below)
+The targets currently identified are: India Post, Singapore Post & Morgan Stanley (IoCs are below)
 
 ## **Indicators**
 
-All the indicators are published [here](https://gist.github.com/pbssubhash/d8283527c972b5e7122104887a862e70). **A total of 135 domains and 15 IP addresses are present.**&#x20;
+All the indicators are published [here](https://gist.github.com/pbssubhash/d8283527c972b5e7122104887a862e70). **A total of 135 domains and 15 IP addresses are present.** The IoC's should be used in conjunction with other indicators mentioned in the following blogs:&#x20;
+
+* [Resecurity's blog on Smishing Traid](https://www.resecurity.com/blog/article/smishing-triad-is-targeting-india-to-steal-personal-and-payment-data-at-scale)
+* [A CTI Analyst - Bablu Kumar's Blog post regarding this campaign](https://hacback17.substack.com/p/phishing-campaign-impersonating-india?r=75yg\&triedRedirect=true)
 
 ## Recommendation
 
-There is no action required from your end except for not being foolish to click links and submit information. The IoCs are shared with law enforcement authorities.
+* There is no action required from your end except for not being foolish to click links and submit information. The IoCs are shared with law enforcement authorities.
+* Upon looking at analysis done by fellow analysts, the money and resources spent on this seem to be substantial and the techniques that they're using indicate that these are not script kiddies.
+* Implement MFA and don't re-use passwords as the credentials you've entered in these phishing pages might be reused when leaked onto dark web.
+* If you've been impacted, please reach out to the relevant authorities at [https://cybercrime.gov.in/](https://cybercrime.gov.in/).
