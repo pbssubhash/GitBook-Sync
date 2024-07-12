@@ -18,6 +18,7 @@
   * [Attack and Defend Azure Serial Console - Part 1](security-research/cloud-security-research/attack-and-defend-azure-serial-console-part-1.md)
   * [Azure Serial Console Attack and Defense - Part 2](security-research/cloud-security-research/azure-serial-console-attack-and-defense-part-2.md)
 * [Adversarial Tradecraft Research & Detection](security-research/adversarial-tradecraft-research-and-detection/README.md)
+  * [Smishing Traid targets India with large scale "India Post" themed iMessage phish texts](security-research/adversarial-tradecraft-research-and-detection/smishing-traid-targets-india-with-large-scale-india-post-themed-imessage-phish-texts.md)
   * [Quick Assist: Friend or Foe? How adversaries can exploit this tool and how can you defend?](security-research/adversarial-tradecraft-research-and-detection/quick-assist-friend-or-foe-how-adversaries-can-exploit-this-tool-and-how-can-you-defend.md)
   * [EDR Silencer - Embracing the Silence](security-research/adversarial-tradecraft-research-and-detection/edr-silencer-embracing-the-silence.md)
   * [Dissecting & Detecting Lsass Shtinkering](security-research/adversarial-tradecraft-research-and-detection/dissecting-and-detecting-lsass-shtinkering.md)
