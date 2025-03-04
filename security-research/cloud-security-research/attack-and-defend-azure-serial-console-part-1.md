@@ -42,13 +42,13 @@ There are several ways to stream logs and analyze but for the sake of this blog,
 
 **Step-1:** Go to [Creation of Log Analytics Workspace on Azure Portal](https://portal.azure.com/#create/Microsoft.LogAnalyticsOMS), select the appropriate subscription, resource group and Name. Please note that Azure Monitor comes in 2 SKU’s. For more information about the pricing details on Azure Log Analytics, please [check here](https://azure.microsoft.com/en-in/pricing/details/monitor/).
 
-[![Alt text](<../../.gitbook/assets/creation of log analytics workspace\_hu937207b178f01c4abd0413255e0f6556\_66850\_0x800\_resize\_box\_3.png>)](<../../.gitbook/assets/creation of log analytics workspace\_hu937207b178f01c4abd0413255e0f6556\_66850\_0x800\_resize\_box\_3.png>)
+<figure><img src="../../.gitbook/assets/creation of log analytics workspace_hu937207b178f01c4abd0413255e0f6556_66850_0x800_resize_box_3.png" alt=""><figcaption></figcaption></figure>
 
 #### Enabling Azure Activity Log monitoring <a href="#enabling-azure-activity-log-monitoring" id="enabling-azure-activity-log-monitoring"></a>
 
-**Step-1:** Go to [Activity Log](https://portal.azure.com/#view/Microsoft\_Azure\_Monitoring/AzureMonitoringBrowseBlade/\~/activityLog), and click on “Export Activity Logs”.
+**Step-1:** Go to [Activity Log](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/activityLog), and click on “Export Activity Logs”.
 
-[![Alt text](<../../.gitbook/assets/go to activity log\_hue130d6f41f01fba36426c05659413b76\_98901\_800x0\_resize\_box\_3.png>)](<../../.gitbook/assets/go to activity log\_hue130d6f41f01fba36426c05659413b76\_98901\_800x0\_resize\_box\_3.png>)
+<figure><img src="../../.gitbook/assets/go to activity log_hue130d6f41f01fba36426c05659413b76_98901_800x0_resize_box_3.png" alt=""><figcaption></figcaption></figure>
 
 **Step-2:** Click on “Add diagnostic setting” and select “Administrative” and “Security” Categories. Click on “Send to Log Analytics Workspace” and select the log analytics workspace that was created [here](broken-reference).
 
@@ -170,11 +170,11 @@ Further analysis indicated that the dump file is created by `svchost.exe` \[Comm
 
 This activity is currently detected by Microsoft Defender for Endpoint. Further guidance on how to detect and prevent LSASS dumping is documented [here](https://www.microsoft.com/en-us/security/blog/2022/10/05/detecting-and-preventing-lsass-credential-dumping-attacks/).
 
-![](<../../.gitbook/assets/lsass dmp defender 1.png>)
+<figure><img src="../../.gitbook/assets/lsass dmp defender 1.png" alt=""><figcaption></figcaption></figure>
 
 The process tree evidence as seen in Defender for Endpoint is below:
 
-[![Alt text](<../../.gitbook/assets/lsass dmp defender 2\_hub24b52ee2f8c243f91185a845e808fbe\_34332\_800x0\_resize\_box\_3.png>)](<../../.gitbook/assets/lsass dmp defender 2\_hub24b52ee2f8c243f91185a845e808fbe\_34332\_800x0\_resize\_box\_3.png>)
+<figure><img src="../../.gitbook/assets/lsass dmp defender 2_hub24b52ee2f8c243f91185a845e808fbe_34332_800x0_resize_box_3.png" alt=""><figcaption></figcaption></figure>
 
 The creation of the lsass dumping can be detected with the help of the below Yara rule.
 

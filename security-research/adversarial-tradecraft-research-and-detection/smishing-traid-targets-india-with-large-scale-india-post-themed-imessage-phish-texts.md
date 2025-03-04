@@ -1,10 +1,6 @@
 # Smishing Traid targets India with large scale "India Post" themed iMessage phish texts
 
-<div data-full-width="true">
-
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>An AI generated Image that depicts a hacker working on computer along with eating Pizza.</p></figcaption></figure>
-
-</div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>An AI generated Image that depicts a hacker working on computer along with eating Pizza.</p></figcaption></figure></div>
 
 ## Background
 
@@ -15,7 +11,7 @@ As of 12/07/2024, this campaign was attributed to a group called "Smishing Triad
 **References:**
 
 * [https://www.resecurity.com/blog/article/smishing-triad-targeted-usps-and-us-citizens-for-data-theft](https://www.resecurity.com/blog/article/smishing-triad-targeted-usps-and-us-citizens-for-data-theft) - Excellent analyis doxing the group and their activities.
-* [https://malpedia.caad.fkie.fraunhofer.de/actor/smishing\_triad](https://malpedia.caad.fkie.fraunhofer.de/actor/smishing\_triad)
+* [https://malpedia.caad.fkie.fraunhofer.de/actor/smishing\_triad](https://malpedia.caad.fkie.fraunhofer.de/actor/smishing_triad)
 
 <figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption><p>Phishing messages that were received.</p></figcaption></figure>
 

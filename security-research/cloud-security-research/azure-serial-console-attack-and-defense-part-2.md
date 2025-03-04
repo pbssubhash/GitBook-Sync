@@ -8,11 +8,11 @@ This is the second installment of the Azure Serial Console blog, which provides 
 
 ### Contents
 
-* [Enabling logging for Linux virtual machine](broken-reference)
-* [Serial Console artifacts on Linux virtual machine](broken-reference)
-* [Hunting for suspicious operations](broken-reference)
-* [Best practices](broken-reference)
-* [Conclusion](broken-reference)
+* Enabling logging for Linux virtual machine
+* Serial Console artifacts on Linux virtual machine
+* Hunting for suspicious operations
+* Best practices
+* Conclusion
 
 ### Enable logging for Linux Virtual machine
 
@@ -20,7 +20,7 @@ Please note that depending on your current setup, this step might not be necessa
 
 The creation of the log analytics workspace and enabling Azure activity monitoring is covered in [Part 1](https://msrc.microsoft.com/blog/2023/08/azure-serial-console-attack-and-defense-part-1/) of the blog. To enable logging for Linux virtual machine, install the Log Analytics Linux Agent as shown below from the Agents tab under Log Analytics workspace.
 
-[![](../../.gitbook/assets/0.png)](../../.gitbook/assets/0.png)
+<figure><img src="../../.gitbook/assets/0.png" alt=""><figcaption></figcaption></figure>
 
 #### Syslog
 
@@ -70,7 +70,7 @@ Install Sysmon using this [guide](https://github.com/Sysinternals/SysmonForLinux
 </Sysmon>
 ```
 
-[![](<../../.gitbook/assets/7. SysmonForLinux\_Install\_Service\_with\_Config.png>)](<../../.gitbook/assets/7. SysmonForLinux\_Install\_Service\_with\_Config.png>)
+<figure><img src="../../.gitbook/assets/7. SysmonForLinux_Install_Service_with_Config.png" alt=""><figcaption></figcaption></figure>
 
 ### Serial Console artifacts on Linux virtual machine
 
@@ -87,7 +87,7 @@ Syslog
 | where SyslogMessage has "Found device /dev/ttyS0"
 ```
 
-[![](<../../.gitbook/assets/1. SerialConsoleLuanch.png>)](<../../.gitbook/assets/1. SerialConsoleLuanch.png>)
+<figure><img src="../../.gitbook/assets/1. SerialConsoleLuanch.png" alt=""><figcaption></figcaption></figure>
 
 To identify the start of a virtual ttyS0 terminal upon the `/dev/ttyS0` is enabled on Linux virtual machine, the following query can be used.
 
@@ -99,7 +99,7 @@ Syslog
 | where SyslogMessage has "Started Serial Getty on ttyS0"
 ```
 
-[![](<../../.gitbook/assets/2. Started Serial Getty on ttyS0.png>)](<../../.gitbook/assets/2. Started Serial Getty on ttyS0.png>)
+<figure><img src="../../.gitbook/assets/2. Started Serial Getty on ttyS0.png" alt=""><figcaption></figcaption></figure>
 
 Discover successful virtual machine access using Serial console in Syslog native logs.
 
@@ -110,7 +110,7 @@ Syslog
 | where SyslogMessage has "serial-getty@ttyS0.service: Succeeded"
 ```
 
-[![](../../.gitbook/assets/3.Succeeded..png)](../../.gitbook/assets/3.Succeeded..png)
+<figure><img src="../../.gitbook/assets/3.Succeeded..png" alt=""><figcaption></figcaption></figure>
 
 Find Failed login attempts to connect to virtual machine using Serial console. The number of failed attempts will also be captured in syslog logs for that corresponding user account for point of time.
 
@@ -120,7 +120,7 @@ Syslog
 | where SyslogMessage has "FAILED LOGIN" and SyslogMessage has "/dev/ttyS0"  
 ```
 
-[![](<../../.gitbook/assets/4.Authentication failure.png>)](<../../.gitbook/assets/4.Authentication failure.png>)
+<figure><img src="../../.gitbook/assets/4.Authentication failure.png" alt=""><figcaption></figcaption></figure>
 
 The use of ‘sudo’ after a successful authentication using serial console will be captured in syslog `authpriv` logs with the command being executed with ‘sudo’ and the commands with ‘sudo’ will also be captured.
 
@@ -130,7 +130,7 @@ Syslog
 | where SyslogMessage has "TTY=ttyS0" and SyslogMessage has "USER=root"  
 ```
 
-[![](<../../.gitbook/assets/5. sudo.png>)](<../../.gitbook/assets/5. sudo.png>)
+<figure><img src="../../.gitbook/assets/5. sudo.png" alt=""><figcaption></figcaption></figure>
 
 #### Tracing activity using Sysmon for Linux
 
@@ -165,7 +165,7 @@ Sysmon_for_Linux
     InitiatingProcessParentId=ParentProcessId1
 ```
 
-[![](<../../.gitbook/assets/8.1 Sysmon\_ProcessCreate\_SerialConsole\_Commands.png>)](<../../.gitbook/assets/8.1 Sysmon\_ProcessCreate\_SerialConsole\_Commands.png>)
+<figure><img src="../../.gitbook/assets/8.1 Sysmon_ProcessCreate_SerialConsole_Commands.png" alt=""><figcaption></figcaption></figure>
 
 For example, the below query can identify all public network connections from the processes executed (within the context of the logged in user) on a virtual machine using serial console.
 
@@ -218,7 +218,7 @@ Sysmon_for_Linux
 | project UtcTime,Computer,User, Image, CommandLine,SourcePort,DestinationIp,DestinationPort 
 ```
 
-[![](<../../.gitbook/assets/9.1 Sysmon\_For\_Linux\_Network\_Connect\_EID\_3.png>)](<../../.gitbook/assets/9.1 Sysmon\_For\_Linux\_Network\_Connect\_EID\_3.png>)
+<figure><img src="../../.gitbook/assets/9.1 Sysmon_For_Linux_Network_Connect_EID_3.png" alt=""><figcaption></figcaption></figure>
 
 #### Tracing activity using Microsoft Defender for Endpoint (MDE)
 
@@ -233,7 +233,7 @@ DeviceLogonEvents
 | project Timestamp, DeviceName,ActionType,LogonType,AccountDomain,AccountName,InitiatingProcessCommandLine, Terminal
 ```
 
-[![](../../.gitbook/assets/me\_sac\_logonEvents.png)](../../.gitbook/assets/me\_sac\_logonEvents.png)
+<figure><img src="../../.gitbook/assets/me_sac_logonEvents.png" alt=""><figcaption></figcaption></figure>
 
 The Kusto query below identifies all processes executed during the session connected via the serial console.
 
@@ -246,7 +246,7 @@ DeviceProcessEvents
 | sort by Timestamp desc 
 ```
 
-[![](../../.gitbook/assets/mde\_sac\_processs2.png)](../../.gitbook/assets/mde\_sac\_processs2.png)
+<figure><img src="../../.gitbook/assets/mde_sac_processs2.png" alt=""><figcaption></figcaption></figure>
 
 The Kusto query below will identify all network connections from the processes executed using serial console.
 
@@ -257,7 +257,7 @@ DeviceNetworkEvents
 | project Timestamp,DeviceName,ActionType,RemoteIP,RemoteIPType,InitiatingProcessCommandLine, InitiatingProcessAccountName,InitiatingProcessPosixAttachedTerminal
 ```
 
-[![](../../.gitbook/assets/mde\_sac\_network.png)](../../.gitbook/assets/mde\_sac\_network.png)
+<figure><img src="../../.gitbook/assets/mde_sac_network.png" alt=""><figcaption></figcaption></figure>
 
 ### Hunting for suspicious operations
 
@@ -331,7 +331,7 @@ AzureActivity
 | render timechart 
 ```
 
-[![Alt text](../../.gitbook/assets/azana.png)](../../.gitbook/assets/azana.png)
+<figure><img src="../../.gitbook/assets/azana.png" alt=""><figcaption></figcaption></figure>
 
 #### Hunting suspicious operations using Boot diagnostics logs
 
@@ -339,7 +339,7 @@ In [Part 1](https://msrc.microsoft.com/blog/2023/08/azure-serial-console-attack-
 
 The following is an execution of LinPEAS (a popular privilege escalation tool) and reverse shell connectivity using Netcat. \[_Please note that Microsoft doesn’t endorse the usage of these tools and it’s the responsibility of readers to use these tools responsibly and ethically. Please check our_ [_terms of service_](https://azure.microsoft.com/en-us/support/legal/) _before using these tools against Azure or other Microsoft infrastructure._]
 
-[![Alt text](../../.gitbook/assets/bootdiag.png)](../../.gitbook/assets/bootdiag.png)
+<figure><img src="../../.gitbook/assets/bootdiag.png" alt=""><figcaption></figcaption></figure>
 
 ### Best Practices
 

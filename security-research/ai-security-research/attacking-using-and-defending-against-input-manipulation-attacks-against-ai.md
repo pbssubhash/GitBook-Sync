@@ -14,7 +14,7 @@ layout:
   description:
     visible: true
   tableOfContents:
-    visible: false
+    visible: true
   outline:
     visible: true
   pagination:
@@ -104,7 +104,7 @@ All being said, there are several other exploitation techniques that can be clas
 {% tab title="Hate speech algo bypass" %}
 **Scenario: Hate speech algorithm bypass**
 
-For example, consider this [notebook](https://colab.research.google.com/github/eugenesiow/practical-ml/blob/master/notebooks/Hate\_Speech\_Detection\_Dynabench.ipynb) which is intended to detect hate speech using RoBERTa model. While variation of algorithms used might be different for enterprise setups (such as social media companies, etc.).
+For example, consider this [notebook](https://colab.research.google.com/github/eugenesiow/practical-ml/blob/master/notebooks/Hate_Speech_Detection_Dynabench.ipynb) which is intended to detect hate speech using RoBERTa model. While variation of algorithms used might be different for enterprise setups (such as social media companies, etc.).
 
 <figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption><p>Hate speech detection bypass using emojis.</p></figcaption></figure>
 
@@ -130,11 +130,7 @@ The noise need not be always invisible to human eye. Consider the stop signs bel
 
 Below is an image that I've taken from the internet and added noise using a [tool ](https://pixelied.com)that is available on the Internet. Why is this a big deal? Automatic number plate recognition system is a mission critical system that enabled LEA's monitor the traffic crime landscape. As mentioned earlier, few governments have added protection against the input not being readable at all. However, the following use case might as well just bypass that restriction without being completely uncompliant.&#x20;
 
-<div align="right" data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Comparison between a muddy number plate with noise v/s without noise.</p></figcaption></figure>
-
-</div>
+<div align="right" data-full-width="false"><figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Comparison between a muddy number plate with noise v/s without noise.</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -178,18 +174,18 @@ If you are a seasoned red teamer, this wouldn't make a lot of difference to you 
 
 Several \*great\* people have worked in this field and have created algorithms that can help create adversarial examples. Below are a few:
 
-* [Fast Gradient Sign Method](https://www.tensorflow.org/tutorials/generative/adversarial\_fgsm)
+* [Fast Gradient Sign Method](https://www.tensorflow.org/tutorials/generative/adversarial_fgsm)
 * [Basic Iterative method](https://locuslab.github.io/2019-03-12-provable/)
 * [Saliency map method](https://arxiv.org/abs/2009.02738)
 * [Projected Gradient Descent ](https://arxiv.org/abs/1808.05537)
 * [Carlini and Wagner Attack](https://fairyonice.github.io/Learn-the-Carlini-and-Wagners-adversarial-attack-MNIST.html)
-* [AdvGAN](https://github.com/mathcbc/advGAN\_pytorch)
+* [AdvGAN](https://github.com/mathcbc/advGAN_pytorch)
 
 ***
 
 ## 📃 Resources
 
-* The OWASP foundation (famous for OWASP TOP-10), one of the premier most not-for-profit organization that puts up a lot of effort in creating collaterals and guides in various areas of security has recently created an ML Top 10 attacks. [Input manipulation attack ](https://owasp.org/www-project-machine-learning-security-top-10/docs/ML01\_2023-Input\_Manipulation\_Attack.html)is actually rated at the top for this year.&#x20;
+* The OWASP foundation (famous for OWASP TOP-10), one of the premier most not-for-profit organization that puts up a lot of effort in creating collaterals and guides in various areas of security has recently created an ML Top 10 attacks. [Input manipulation attack ](https://owasp.org/www-project-machine-learning-security-top-10/docs/ML01_2023-Input_Manipulation_Attack.html)is actually rated at the top for this year.&#x20;
 * Open AI has created a really [nice blog post](https://openai.com/research/attacking-machine-learning-with-adversarial-examples) related to Adversarial examples (with a good chunk of math).&#x20;
 
 ***

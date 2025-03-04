@@ -13,11 +13,13 @@
 
 * [AI Security Research](security-research/ai-security-research/README.md)
   * [Attacking using (and defending against) Input manipulation attacks against AI](security-research/ai-security-research/attacking-using-and-defending-against-input-manipulation-attacks-against-ai.md)
+  * [(Ab)using AI to attack M365 and other services to conduct plethora of attacks](security-research/ai-security-research/ab-using-ai-to-attack-m365-and-other-services-to-conduct-plethora-of-attacks.md)
 * [Cloud Security Research](security-research/cloud-security-research/README.md)
   * [Azure Storage Account Security - Attack & Defend: Part 1](security-research/cloud-security-research/azure-storage-account-security-attack-and-defend-part-1.md)
   * [Attack and Defend Azure Serial Console - Part 1](security-research/cloud-security-research/attack-and-defend-azure-serial-console-part-1.md)
   * [Azure Serial Console Attack and Defense - Part 2](security-research/cloud-security-research/azure-serial-console-attack-and-defense-part-2.md)
 * [Adversarial Tradecraft Research & Detection](security-research/adversarial-tradecraft-research-and-detection/README.md)
+  * [RDP Exfil - The technique that works almost every time](security-research/adversarial-tradecraft-research-and-detection/rdp-exfil-the-technique-that-works-almost-every-time.md)
   * [Smishing Traid targets India with large scale "India Post" themed iMessage phish texts](security-research/adversarial-tradecraft-research-and-detection/smishing-traid-targets-india-with-large-scale-india-post-themed-imessage-phish-texts.md)
   * [Quick Assist: Friend or Foe? How adversaries can exploit this tool and how can you defend?](security-research/adversarial-tradecraft-research-and-detection/quick-assist-friend-or-foe-how-adversaries-can-exploit-this-tool-and-how-can-you-defend.md)
   * [EDR Silencer - Embracing the Silence](security-research/adversarial-tradecraft-research-and-detection/edr-silencer-embracing-the-silence.md)
