@@ -6,6 +6,8 @@ description: >-
 cover: >-
   https://images.unsplash.com/photo-1677756119517-756a188d2d94?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw2fHxBSXxlbnwwfHx8fDE3NDEwNjY4MDJ8MA&ixlib=rb-4.0.3&q=85
 coverY: 0
+tags:
+  - ai-security
 ---
 
 # (Ab)using AI to attack M365 and other services to conduct plethora of attacks

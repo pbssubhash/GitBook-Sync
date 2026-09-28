@@ -6,9 +6,11 @@ cover: >-
   https://images.unsplash.com/photo-1524514587686-e2909d726e9b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxtYWNoaW5lfGVufDB8fHx8MTcwMzc4MDYzOXww&ixlib=rb-4.0.3&q=85
 coverY: 0
 layout:
+  width: default
   cover:
     visible: true
     size: full
+    mask: none
   title:
     visible: true
   description:
@@ -19,6 +21,16 @@ layout:
     visible: true
   pagination:
     visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
+tags:
+  - ai-security
 ---
 
 # Attacking using (and defending against) Input manipulation attacks against AI

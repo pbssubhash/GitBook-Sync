@@ -18,6 +18,7 @@
   * [Azure Storage Account Security - Attack & Defend: Part 1](security-research/cloud-security-research/azure-storage-account-security-attack-and-defend-part-1.md)
   * [Attack and Defend Azure Serial Console - Part 1](security-research/cloud-security-research/attack-and-defend-azure-serial-console-part-1.md)
   * [Azure Serial Console Attack and Defense - Part 2](security-research/cloud-security-research/azure-serial-console-attack-and-defense-part-2.md)
+  * [Using Azure Open AI? These 3 free changes can surprisingly make your setup secure](security-research/cloud-security-research/using-azure-open-ai-these-3-free-changes-can-surprisingly-make-your-setup-secure.md)
 * [Adversarial Tradecraft Research & Detection](security-research/adversarial-tradecraft-research-and-detection/README.md)
   * [RDP Exfil - The technique that works almost every time](security-research/adversarial-tradecraft-research-and-detection/rdp-exfil-the-technique-that-works-almost-every-time.md)
   * [Smishing Traid targets India with large scale "India Post" themed iMessage phish texts](security-research/adversarial-tradecraft-research-and-detection/smishing-traid-targets-india-with-large-scale-india-post-themed-imessage-phish-texts.md)

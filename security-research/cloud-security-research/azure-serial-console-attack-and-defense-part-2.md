@@ -1,3 +1,8 @@
+---
+tags:
+  - cloud-security
+---
+
 # Azure Serial Console Attack and Defense - Part 2
 
 This blog was originally posted on Microsoft's MSRC blog on December 19, 2023, and this version is an archived/mirrored version. It was created in collaboration with Malla Reddy Donapati.

@@ -7,9 +7,11 @@ cover: >-
   https://images.unsplash.com/photo-1553413077-190dd305871c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxzdG9yYWdlfGVufDB8fHx8MTcwNDU5OTEzMnww&ixlib=rb-4.0.3&q=85
 coverY: 0
 layout:
+  width: default
   cover:
     visible: true
     size: full
+    mask: none
   title:
     visible: true
   description:
@@ -20,6 +22,16 @@ layout:
     visible: true
   pagination:
     visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
+tags:
+  - cloud-security
 ---
 
 # Azure Storage Account Security - Attack & Defend: Part 1

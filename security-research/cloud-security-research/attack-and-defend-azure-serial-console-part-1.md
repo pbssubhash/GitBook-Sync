@@ -1,3 +1,8 @@
+---
+tags:
+  - cloud-security
+---
+
 # Attack and Defend Azure Serial Console - Part 1
 
 This blog was originally posted on Microsoft's MSRC blog on August 10, 2023, and this version is an archived/mirrored version. It was created in collaboration with Malla Reddy Donapati and Nutan Vishwakarma (MSRC Threat Hunting Team).
@@ -38,7 +43,7 @@ Azure Serial Console is very leveraged to circumvent security features and that�
 
 There are several ways to stream logs and analyze but for the sake of this blog, we will be creating a log analytics workspace and stream logs to the created workspace. This would allow us to analyze the activity without owning a logging solution. However, this would differ according to your setup. If your setup has an SIEM, the schema, query language might be different.
 
-#### Creation of Log Analytics Workspace [Creation of Log Analytics Workspace](broken-reference) <a href="#creation-of-log-analytics-workspace" id="creation-of-log-analytics-workspace"></a>
+#### Creation of Log Analytics Workspace [Creation of Log Analytics Workspace](/broken/pages/zkHyaE1K0XInAZUi0tIb) <a href="#creation-of-log-analytics-workspace" id="creation-of-log-analytics-workspace"></a>
 
 **Step-1:** Go to [Creation of Log Analytics Workspace on Azure Portal](https://portal.azure.com/#create/Microsoft.LogAnalyticsOMS), select the appropriate subscription, resource group and Name. Please note that Azure Monitor comes in 2 SKU’s. For more information about the pricing details on Azure Log Analytics, please [check here](https://azure.microsoft.com/en-in/pricing/details/monitor/).
 
@@ -50,7 +55,7 @@ There are several ways to stream logs and analyze but for the sake of this blog,
 
 <figure><img src="../../.gitbook/assets/go to activity log_hue130d6f41f01fba36426c05659413b76_98901_800x0_resize_box_3.png" alt=""><figcaption></figcaption></figure>
 
-**Step-2:** Click on “Add diagnostic setting” and select “Administrative” and “Security” Categories. Click on “Send to Log Analytics Workspace” and select the log analytics workspace that was created [here](broken-reference).
+**Step-2:** Click on “Add diagnostic setting” and select “Administrative” and “Security” Categories. Click on “Send to Log Analytics Workspace” and select the log analytics workspace that was created [here](/broken/pages/zkHyaE1K0XInAZUi0tIb).
 
 <figure><img src="../../.gitbook/assets/enable logging azure activity_hud7978102c529ee84241e99525dedda8e_68416_800x0_resize_box_3.png" alt=""><figcaption></figcaption></figure>
 
