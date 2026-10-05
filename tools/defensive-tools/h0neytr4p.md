@@ -10,13 +10,11 @@ Built by Red teamers with :heart\_eyes\_cat: for our Blue Team friends.\
 \
 **Authors:**
 
-* Subhash; [Twitter](https://twitter.com/pbssubhash) | [LinkedIn](https://in.linkedin.com/in/pbssubhash)\
-
+* Subhash; [Twitter](https://twitter.com/pbssubhash) | [LinkedIn](https://in.linkedin.com/in/pbssubhash)<br>
 
 **Rule Contributors:**
 
-* Aakash; [Twitter](https://twitter.com/me\_godsky) | [LinkedIn](https://in.linkedin.com/in/aakashmadaan13)\
-
+* Aakash; [Twitter](https://twitter.com/me_godsky) | [LinkedIn](https://in.linkedin.com/in/aakashmadaan13)<br>
 
 ### What is h0neytr4p?
 

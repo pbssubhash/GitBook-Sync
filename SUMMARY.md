@@ -14,6 +14,7 @@
 * [AI Security Research](security-research/ai-security-research/README.md)
   * [Attacking using (and defending against) Input manipulation attacks against AI](security-research/ai-security-research/attacking-using-and-defending-against-input-manipulation-attacks-against-ai.md)
   * [(Ab)using AI to attack M365 and other services to conduct plethora of attacks](security-research/ai-security-research/ab-using-ai-to-attack-m365-and-other-services-to-conduct-plethora-of-attacks.md)
+  * [Automating Cyber Vulnerability Research Through Semi Autonomous Agentic Workflows](security-research/ai-security-research/automating-cyber-vulnerability-research-through-semi-autonomous-agentic-workflows.md)
 * [Cloud Security Research](security-research/cloud-security-research/README.md)
   * [Azure Storage Account Security - Attack & Defend: Part 1](security-research/cloud-security-research/azure-storage-account-security-attack-and-defend-part-1.md)
   * [Attack and Defend Azure Serial Console - Part 1](security-research/cloud-security-research/attack-and-defend-azure-serial-console-part-1.md)

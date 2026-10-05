@@ -7,14 +7,12 @@ This is an older post (written around \~2015) and ported from my old blog. Pleas
 \*\*\*\*\*\*\*\*
 
 Hey Guys,\
-As others in the Hacker’s community,I’m also a lover of OpenSource and also our dear friend Android :-) . From a couple of days, I’ve started getting interested into Android Dev stuff and thats where I heard the name CyanogenMod Roms.. CM 12, Oh Yeah one of the best roms I’ve ever seen.\
-
+As others in the Hacker’s community,I’m also a lover of OpenSource and also our dear friend Android :-) . From a couple of days, I’ve started getting interested into Android Dev stuff and thats where I heard the name CyanogenMod Roms.. CM 12, Oh Yeah one of the best roms I’ve ever seen.<br>
 
 I was really fascinated by the powerful features of CyanogenMod and starting falling in love with it.\
 Being exposed to the hackers community, I prefer my surroundings to be secure and I see everything in a security prespective. There I saw an awesome feature called folder lock. I’ve googled about that and saw that it was one of the loved features of CM.\
 Here are some of the snapshots of how folder lock looks like in CM\
-![Snapshot of how folder lock looks like](http://i0.wp.com/redgadgets.com/wp-content/uploads/2015/01/folder-lock3.png)\
-
+![Snapshot of how folder lock looks like](http://i0.wp.com/redgadgets.com/wp-content/uploads/2015/01/folder-lock3.png)<br>
 
 ![Snapshot of how folder lock looks like](http://i1.wp.com/redgadgets.com/wp-content/uploads/2015/01/folder-lock11.png)
 
@@ -34,7 +32,7 @@ Didn’t report anyone. Yet anyone can submit this bug to the CM dev’s because
 
 Will be blogging anymore bugs I encounter/discover :-)\
 Looks like someone else has identified this\
-[https://forums.oneplus.net/threads/lock-folder-disappeared-leaving-apps-unreachable.94367/?hc\_location=ufi#post-4610060](https://forums.oneplus.net/threads/lock-folder-disappeared-leaving-apps-unreachable.94367/?hc\_location=ufi#post-4610060)\
-[http://www.reddit.com/r/cyanogenmod/comments/2abb6y/m8\_question\_what\_does\_protected\_apps\_do/?hc\_location=ufi](http://www.reddit.com/r/cyanogenmod/comments/2abb6y/m8\_question\_what\_does\_protected\_apps\_do/?hc\_location=ufi)\
+[https://forums.oneplus.net/threads/lock-folder-disappeared-leaving-apps-unreachable.94367/?hc\_location=ufi#post-4610060](https://forums.oneplus.net/threads/lock-folder-disappeared-leaving-apps-unreachable.94367/?hc_location=ufi#post-4610060)\
+[http://www.reddit.com/r/cyanogenmod/comments/2abb6y/m8\_question\_what\_does\_protected\_apps\_do/?hc\_location=ufi](http://www.reddit.com/r/cyanogenmod/comments/2abb6y/m8_question_what_does_protected_apps_do/?hc_location=ufi)\
 Would like to give appropriate credits to them :-) and would like to thank Anand for letting me know about this.!\
 Bye for now!
